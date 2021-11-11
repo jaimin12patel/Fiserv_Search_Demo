@@ -10,8 +10,6 @@ class RatePage extends AppTestBasePage
     async verifyTitle(titleText)
     {
         await driver.wait(util.titleIs(titleText), 20000);
-
-        await driver.wait(until.titleIs
     }
 
     async getHeaderText()
