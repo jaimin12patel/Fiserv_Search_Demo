@@ -1,8 +1,8 @@
 const rateHeaderxPath = '//*[@id="root"]//h1';
-const impurchasingButtonText = "I'm Purchasing";
+const impurchasingButtonXpath = '//*[@id="root"]/span/div/section[2]//a[1]';
 
 
 module.exports = { 
     rateHeaderxPath,
-    impurchasingButtonText,
+    impurchasingButtonXpath,
 } 

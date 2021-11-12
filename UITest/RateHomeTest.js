@@ -18,8 +18,8 @@ describe('Go to Rate Home Page and verify header', function(){
 
         await RatePageobj.verifyTitle('Mortgages, Loans, Home Buying & Refinance Mortgage Company | Guaranteed Rate');
         
-        var headerText = await RatePageobj.getHeaderText();
-        expect(headerText).to.equal('YOUR DREAM HOME IS POSSIBLE');
+        //var headerText = await RatePageobj.getHeaderText();
+        //expect(headerText).to.equal('YOUR DREAM HOME IS POSSIBLE');
 
         await RatePageobj.ClickOnimPurchasingButton();
     })

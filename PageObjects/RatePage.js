@@ -1,15 +1,15 @@
 const RatePageElemets = require('../PgaesElements/RatePageEle');
 
 const AppTestBasePage = require('../AppTestBase');
-const { By } = require('selenium-webdriver');
-const { util } = require('chai');
+const { By, until } = require('selenium-webdriver');
+
 
 
 class RatePage extends AppTestBasePage
 {
     async verifyTitle(titleText)
     {
-        await driver.wait(util.titleIs(titleText), 20000);
+        await driver.wait(until.titleIs(titleText), 20000);
     }
 
     async getHeaderText()
@@ -27,7 +27,9 @@ class RatePage extends AppTestBasePage
     async ClickOnimPurchasingButton()
     {
         try{
-            await driver.findElement(By.linkText(RatePageElemets.impurchasingButtonText)).click();
+            await driver.wait(until.elementLocated(By.xpath(RatePageElemets.impurchasingButtonXpath)), 30000);
+
+            await driver.findElement(By.xpath(RatePageElemets.impurchasingButtonXpath)).click();
         }
         catch(err){
             throw err;
