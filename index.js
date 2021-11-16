@@ -2,7 +2,7 @@ const env = process.env.RATE_ENV.toLowerCase() || 'prod';
 const browser = process.env.BROWSER.toLowerCase() || 'chrome';
 
 const Urls = {
-    prod: 'https://www.rate.com/'
+    prod: 'https://www.wayfair.com/'
 }
 
 module.exports = {

@@ -1,6 +1,7 @@
-const RatePageElemets = require('../PgaesElements/RatePageEle');
+const WayPageElemets = require('../PgaesElements/wayHomePageEle');
 
 const AppTestBasePage = require('../AppTestBase');
+
 const { By, until } = require('selenium-webdriver');
 
 
@@ -12,11 +13,11 @@ class RatePage extends AppTestBasePage
         await driver.wait(until.titleIs(titleText), 20000);
     }
 
-    async getHeaderText()
+    async verifyHeaderTitleisDisplayed()
     {
         
         try{
-            await driver.findElement(By.xpath(RatePageElemets.rateHeaderxPath)).getAttribute("value");
+             await driver.findElement(By.xpath(WayPageElemets.wayfairTitlexpath)).getTitle();
         }
         catch(err)
         {
@@ -24,12 +25,12 @@ class RatePage extends AppTestBasePage
         }
     }
 
-    async ClickOnimPurchasingButton()
+    async ClickOnWayFairMoreIcon()
     {
         try{
-            await driver.wait(until.elementLocated(By.xpath(RatePageElemets.impurchasingButtonXpath)), 30000);
+            await driver.wait(until.elementLocated(By.id(WayPageElemets.moreIconWayfairMenuID)), 30000);
 
-            await driver.findElement(By.xpath(RatePageElemets.impurchasingButtonXpath)).click();
+            await driver.findElement(By.id(WayPageElemets.moreIconWayfairMenuID)).click();
         }
         catch(err){
             throw err;
