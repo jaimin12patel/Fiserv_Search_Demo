@@ -12,6 +12,8 @@ const config = require('./index');
 
 var driver;
 
+
+
 if(config.browser == 'chrome'){
     driver = new Builder().forBrowser('chrome').build();
 }
@@ -34,6 +36,8 @@ class AppTestBasePage{
     }
 
     async configerBrowserScreen(){
+        //await driver.manage().window().setRect({ width: 1440, height: 900 })
+
         await driver.manage().window().maximize();
     }
 
@@ -41,6 +45,7 @@ class AppTestBasePage{
         if(config.env == 'prod'){
             console.log(config.writeLoginUrl);
             await driver.get(config.writeLoginUrl);
+            await driver.manage().setTimeouts( { implicit: 10000 } );
         }
     }
 
