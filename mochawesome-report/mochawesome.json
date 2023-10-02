@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-10-02T04:44:25.039Z",
-    "end": "2023-10-02T04:44:28.165Z",
-    "duration": 3126,
+    "start": "2023-10-02T14:16:43.635Z",
+    "end": "2023-10-02T14:16:47.588Z",
+    "duration": 3953,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,25 +18,25 @@
   },
   "results": [
     {
-      "uuid": "b4e1444b-1827-48e5-bf57-12de84503d5f",
+      "uuid": "5a451b23-71c0-4f72-82a0-f8add2cb0113",
       "title": "",
-      "fullFile": "/Users/jaiminpatel/Documents/Automation/WebdriverJS-Selenium1/UITest/yahoo-search-engine-test.js",
-      "file": "/UITest/yahoo-search-engine-test.js",
+      "fullFile": "/Users/jaiminpatel/Documents/Automation/SearchEngines_Automation/UITest/bing-search-engine-test.js",
+      "file": "/UITest/bing-search-engine-test.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "1b6f8ee9-1096-4774-adf4-9f3f3bcd2eed",
-          "title": "Go to Yahoo Search and Validate functionality",
-          "fullFile": "/Users/jaiminpatel/Documents/Automation/WebdriverJS-Selenium1/UITest/yahoo-search-engine-test.js",
-          "file": "/UITest/yahoo-search-engine-test.js",
+          "uuid": "8551c331-b8f8-43ed-b779-0f555c0f6abc",
+          "title": "Go to Bing Search engine and Validate functionality",
+          "fullFile": "/Users/jaiminpatel/Documents/Automation/SearchEngines_Automation/UITest/bing-search-engine-test.js",
+          "file": "/UITest/bing-search-engine-test.js",
           "beforeHooks": [
             {
-              "title": "\"before each\" hook in \"Go to Yahoo Search and Validate functionality\"",
-              "fullTitle": "Go to Yahoo Search and Validate functionality \"before each\" hook in \"Go to Yahoo Search and Validate functionality\"",
+              "title": "\"before each\" hook in \"Go to Bing Search engine and Validate functionality\"",
+              "fullTitle": "Go to Bing Search engine and Validate functionality \"before each\" hook in \"Go to Bing Search engine and Validate functionality\"",
               "timedOut": false,
-              "duration": 1763,
+              "duration": 1530,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,18 +45,18 @@
               "context": null,
               "code": "await new BasePage().writeUrl();\nawait new BasePage().configureBrowserScreen()",
               "err": {},
-              "uuid": "e86be66b-7c1e-4b0b-89c1-74c3d2f1d61a",
-              "parentUUID": "1b6f8ee9-1096-4774-adf4-9f3f3bcd2eed",
+              "uuid": "a0e89747-7598-42e6-a782-91fe31711b8b",
+              "parentUUID": "8551c331-b8f8-43ed-b779-0f555c0f6abc",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after each\" hook in \"Go to Yahoo Search and Validate functionality\"",
-              "fullTitle": "Go to Yahoo Search and Validate functionality \"after each\" hook in \"Go to Yahoo Search and Validate functionality\"",
+              "title": "\"after each\" hook in \"Go to Bing Search engine and Validate functionality\"",
+              "fullTitle": "Go to Bing Search engine and Validate functionality \"after each\" hook in \"Go to Bing Search engine and Validate functionality\"",
               "timedOut": false,
-              "duration": 56,
+              "duration": 57,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,40 +65,40 @@
               "context": null,
               "code": "await new BasePage().quitBrowser();",
               "err": {},
-              "uuid": "334476c3-d05f-4935-8086-aa9ca79447ff",
-              "parentUUID": "1b6f8ee9-1096-4774-adf4-9f3f3bcd2eed",
+              "uuid": "add93e64-a052-42ca-9f53-a8b6e57668c8",
+              "parentUUID": "8551c331-b8f8-43ed-b779-0f555c0f6abc",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "Alex should be able to search via yahoo search engine",
-              "fullTitle": "Go to Yahoo Search and Validate functionality Alex should be able to search via yahoo search engine",
+              "title": "Alex should be able to search via Bing search engine",
+              "fullTitle": "Go to Bing Search engine and Validate functionality Alex should be able to search via Bing search engine",
               "timedOut": false,
-              "duration": 1301,
+              "duration": 2362,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "await YahooSearchPage.verifyYahooSearchEngineTitle(Data.yahoo_search_engine_title);\nassert.isTrue(await YahooSearchPage.validateYahooLogoDisplayed());\nawait YahooSearchPage.searchOnTheSearchBarAndHitEnter(Data.fiserv_input);\nawait YahooSearchPage.clickOnTheFistResult();\n//assert.isTrue(await YahooSearchPage.validateFiservImageDisplayed());",
+              "code": "await BingSearchPage.verifyBingSearchEngineTitle(Data.bing_search_engine_title);\nconsole.log(1);\nassert.isTrue(await BingSearchPage.validateBingLogoDisplayed());\nawait BingSearchPage.searchOnTheSearchBarAndHitEnter(Data.fiserv_input);\nawait BingSearchPage.clickOnTheFistResult();\nassert.isTrue(await BingSearchPage.validateFiservImageDisplayed());",
               "err": {},
-              "uuid": "a1901df2-fd9e-4459-b9c0-fa3fb272cec2",
-              "parentUUID": "1b6f8ee9-1096-4774-adf4-9f3f3bcd2eed",
+              "uuid": "b5043c98-08d9-457f-9f13-0ab43a82f828",
+              "parentUUID": "8551c331-b8f8-43ed-b779-0f555c0f6abc",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a1901df2-fd9e-4459-b9c0-fa3fb272cec2"
+            "b5043c98-08d9-457f-9f13-0ab43a82f828"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1301,
+          "duration": 2362,
           "root": false,
           "rootEmpty": false,
           "_timeout": 300000

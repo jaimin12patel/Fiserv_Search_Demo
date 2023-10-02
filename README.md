@@ -16,6 +16,8 @@ Make sure node_module created / Updated with package-lock.json file.
 Now, i think we are ready for our test execution using this command 
 SEARCH_ENV=google BROWSER=chrome npx mocha UITest/google-search-engine-test.js --reporter mochawesome
 
+![Alt text](image.png)
+
 OR We Can run the test from package.json by right clicking on the script name. 
 
 Once you run the test it should give to test report too in help of mocha awesome.
