@@ -5,7 +5,7 @@
 
 Make sure you have VS Code Editor > You should have Git configured on your laptop
 
-Clone the Git repository On your VS Code Terminal - https://github.com/jaimin12patel/WebdriverJS-Selenium1.git
+Clone the Git repository On your VS Code Terminal - https://github.com/jaimin12patel/Fiserv_Search_Demo.git
 
 Make sure repo has been downloaded successfully and open the Project path on VS Code Terminal. 
 
