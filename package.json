@@ -5,14 +5,19 @@
   "main": "index.js",
   "dependencies": {
     "chai": "^4.3.4",
+    "chromedriver": "^117.0.3",
+    "geckodriver": "^4.2.1",
     "prettier": "^2.4.1",
     "selenium-webdriver": "^4.0.0"
   },
   "devDependencies": {
-    "mocha": "^9.1.3"
+    "mocha": "^9.1.3",
+    "mochawesome": "^7.1.3"
   },
   "scripts": {
-    "test": "mocha"
+    "googleSearchTest": "SEARCH_ENV=google BROWSER=chrome npx mocha UITest/google-search-engine-test.js --reporter mochawesome",
+    "bingSearchTest": "SEARCH_ENV=bing BROWSER=chrome npx mocha UITest/bing-search-engine-test.js --reporter mochawesome",
+    "yahooSearchTest": "SEARCH_ENV=yahoo BROWSER=chrome npx mocha UITest/yahoo-search-engine-test.js --reporter mochawesome"
   },
   "author": "Jaimin Patel",
   "license": "ISC"
